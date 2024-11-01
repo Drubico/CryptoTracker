@@ -1,4 +1,4 @@
-package com.drubico.cryptotracker.util
+package com.drubico.cryptotracker.core.presentation.util
 
 import com.drubico.cryptotracker.R
 

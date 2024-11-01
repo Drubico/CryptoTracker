@@ -1,4 +1,4 @@
-package com.drubico.cryptotracker.util
+package com.drubico.cryptotracker.core.domain.util
 
 typealias DomainError = Error
 
