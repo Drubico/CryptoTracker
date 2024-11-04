@@ -1,4 +1,4 @@
-package com.drubico.cryptotracker.crypto.data.dto
+package com.drubico.cryptotracker.crypto.data.networking.dto
 
 import kotlinx.serialization.Serializable
 

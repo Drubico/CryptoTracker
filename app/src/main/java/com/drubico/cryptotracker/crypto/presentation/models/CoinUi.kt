@@ -3,6 +3,7 @@ package com.drubico.cryptotracker.crypto.presentation.models
 import androidx.annotation.DrawableRes
 import com.drubico.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import com.drubico.cryptotracker.crypto.domain.Coin
+import com.drubico.cryptotracker.crypto.presentation.coin_detail.DataPoint
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -15,6 +16,7 @@ data class CoinUi(
     val priceUSD: DisplayableNumber,
     val changePercent24Hr: DisplayableNumber,
     @DrawableRes val iconRes: Int,
+    val coinPriceHistory: List<DataPoint> = emptyList(),
 )
 
 data class DisplayableNumber(

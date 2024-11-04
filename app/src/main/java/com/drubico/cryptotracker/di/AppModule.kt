@@ -1,8 +1,8 @@
 package com.drubico.cryptotracker.di
 
-import com.drubico.cryptotracker.core.data.networking.CoinDataSource
+import com.drubico.cryptotracker.crypto.domain.CoinDataSource
 import com.drubico.cryptotracker.core.data.networking.HttpClientFactory
-import com.drubico.cryptotracker.crypto.data.RemoteCoinDataSource
+import com.drubico.cryptotracker.crypto.data.networking.RemoteCoinDataSource
 import com.drubico.cryptotracker.crypto.presentation.coin_list.CoinListViewModel
 import io.ktor.client.engine.cio.CIO
 import org.koin.androidx.viewmodel.dsl.viewModelOf

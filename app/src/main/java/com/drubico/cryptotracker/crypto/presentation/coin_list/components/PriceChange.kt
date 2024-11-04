@@ -35,7 +35,7 @@ fun PriceChange(
         Color.Green
     }
     val backgroundColor = if (change.value < 0.0) {
-        MaterialTheme.colorScheme.onErrorContainer
+        MaterialTheme.colorScheme.errorContainer
     } else {
         greenBackground
     }
@@ -74,7 +74,7 @@ private fun PriceChangePreview() {
     CryptoTrackerTheme {
         PriceChange(
             change = DisplayableNumber(
-                value = 2.43,
+                value = -2.43,
                 formatted = "2.43"
             )
         )
