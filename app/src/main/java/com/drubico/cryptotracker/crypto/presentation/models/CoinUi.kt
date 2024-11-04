@@ -1,8 +1,8 @@
 package com.drubico.cryptotracker.crypto.presentation.models
 
 import androidx.annotation.DrawableRes
+import com.drubico.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import com.drubico.cryptotracker.crypto.domain.Coin
-import com.drubico.cryptotracker.util.getDrawableIdForCoin
 import java.text.NumberFormat
 import java.util.Locale
 

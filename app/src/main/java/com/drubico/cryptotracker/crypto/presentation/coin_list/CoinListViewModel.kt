@@ -8,7 +8,6 @@ import com.drubico.cryptotracker.core.domain.util.onSuccess
 import com.drubico.cryptotracker.crypto.presentation.models.toCoinUi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
@@ -27,6 +26,17 @@ class CoinListViewModel(
         initialValue = CoinListState()
     )
 
+    fun onAction(action: CoinListAction) {
+        when (action) {
+            is CoinListAction.OnCoinClick -> {
+
+            }
+
+            is CoinListAction.OnRefresh -> {
+                loadCoins()
+            }
+        }
+    }
 
     private fun loadCoins() {
         viewModelScope.launch {
